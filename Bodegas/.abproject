@@ -1,0 +1,45 @@
+{
+  "ProjectName": "Bodegas",
+  "ProjectGuid": "8490239d-6d06-4099-ae38-14606894b346",
+  "projectVersion": 1,
+  "AppIdentifier": "com.telerik.Bodegas",
+  "DisplayName": "Bodegas",
+  "Author": "",
+  "Description": "Bodegas",
+  "BundleVersion": "1.0",
+  "AndroidVersionCode": "1",
+  "iOSDeviceFamily": [
+    "1",
+    "2"
+  ],
+  "iOSBackgroundMode": [],
+  "ProjectTypeGuids": "{070BCB52-5A75-4F8C-A973-144AF0EAFCC9}",
+  "FrameworkVersion": "4.0.0",
+  "AndroidPermissions": [
+    "android.permission.INTERNET"
+  ],
+  "DeviceOrientations": [
+    "Portrait",
+    "Landscape"
+  ],
+  "AndroidHardwareAcceleration": "true",
+  "iOSStatusBarStyle": "Default",
+  "Framework": "Cordova",
+  "WP8TileTitle": "",
+  "WP8Publisher": "",
+  "WP8Capabilities": [
+    "ID_CAP_NETWORKING",
+    "ID_CAP_WEBBROWSERCOMPONENT"
+  ],
+  "WP8Requirements": [],
+  "WP8PublisherID": "{538a1978-b803-403f-afd9-c295de169a6a}",
+  "WP8ProductID": "{54ff3b87-e9bc-4bbc-b9d9-3c3a63a6e8f5}",
+  "WPSdk": "8.0",
+  "WP8PackageIdentityName": "1234Telerik.Bodegas",
+  "WP8WindowsPublisherName": "CN=Telerik",
+  "WP8SupportedResolutions": [
+    "ID_RESOLUTION_WVGA",
+    "ID_RESOLUTION_WXGA",
+    "ID_RESOLUTION_HD720P"
+  ]
+}
