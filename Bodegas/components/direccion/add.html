@@ -1,0 +1,79 @@
+<div data-role="view" data-title="Add" data-model="app.direccion.addItemViewModel" data-bind="events: { show: onShow }" id="direccionModelAddItemView">
+    <header data-role="header">
+        <div data-role="navbar" class="header-text">
+            <span>Nueva Dirección</span>
+            <a data-role="backbutton" data-align="left">Cancel</a>
+            <a data-role="button" data-align="right" data-bind="events: { click: onSaveClick }">Save</a>
+        </div>
+    </header>
+    <!-- START_CUSTOM_CODE_direccionModel -->
+    <!-- END_CUSTOM_CODE_direccionModel -->
+    <div id="editableListForm63" class="form-view">
+        <form>
+            <ul class="form-content" data-role="listview" data-style="inset">
+                <li class="form-content-item">
+
+                    <label>
+
+                        <span>departamentoId</span>
+
+                        <input id="departamento" data-bind="value: addFormData.departamento" placeholder="departamentoId" type="text">
+                    </label>
+
+                </li>
+                <li class="form-content-item">
+
+                    <label>
+
+                        <span>provinciaId</span>
+
+                        <input id="provincia" data-bind="value: addFormData.provincia" placeholder="provinciaId" type="text">
+                    </label>
+
+                </li>
+                <li class="form-content-item">
+
+                    <label>
+
+                        <span>distritoId</span>
+
+                        <input id="distrito" data-bind="value: addFormData.distrito" placeholder="distritoId" type="text">
+                    </label>
+
+                </li>
+                <li class="form-content-item">
+
+                    <label>
+
+                        <span>referencia</span>
+
+                        <input id="referencia" data-bind="value: addFormData.referencia" placeholder="referencia" type="text">
+                    </label>
+
+                </li>
+                <li class="form-content-item">
+
+                    <label>
+
+                        <span>domicilio</span>
+
+                        <input id="domicilio" data-bind="value: addFormData.domicilio" placeholder="domicilio" type="text">
+                    </label>
+
+                </li>
+                <li class="form-content-item">
+
+                    <label>
+
+                        <span>numero</span>
+
+                        <input id="numero" data-bind="value: addFormData.numero" placeholder="numero" type="text">
+                    </label>
+
+                </li>
+            </ul>
+        </form>
+        <!-- START_CUSTOM_CODE_editableListForm63 -->
+        <!-- END_CUSTOM_CODE_editableListForm63 -->
+    </div>
+</div>
