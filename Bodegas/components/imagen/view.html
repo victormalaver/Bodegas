@@ -1,0 +1,42 @@
+<div data-role="view" data-title="Imagen" data-layout="main" data-model="app.imagen" data-show="app.imagen.onShow" data-after-show="app.imagen.afterShow">
+
+    <!-- START_CUSTOM_CODE_imagen -->
+    <!-- Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes -->
+
+    <!-- END_CUSTOM_CODE_imagen -->
+    <header data-role="header">
+        <div data-role="navbar" class="header-text">
+            <a data-role="backbutton" data-align="left" class="backButtonWrapper" style="display: none;">Back</a>
+            <span data-role="view-title"></span>
+
+            <a data-role="button" href="#appDrawer" data-rel="drawer" data-align="left" data-icon="drawer-button"></a>
+
+
+        </div>
+    </header>
+
+
+    <ul class="masterDetailView" data-role="listview" data-auto-bind="false" data-style="inset" data-template="imagenModelTemplate" data-bind="{ source: imagenModel.dataSource, events: {click: imagenModel.itemClick} }" data-pull-to-refresh="false" data-endless-scroll="false">
+    </ul>
+
+
+    <!-- START_CUSTOM_CODE_imagenModel -->
+    <!-- Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes -->
+
+    <!-- END_CUSTOM_CODE_imagenModel -->
+    <script type="text/x-kendo-template" id="imagenModelTemplate">
+        <div class="image-with-text">
+            # data = app.imagen.imagenModel.fixHierarchicalData(data); #
+
+            <img src="#: data['imagenUrl'] #">
+            <h3>#: data['nombre'] #</h3>
+            <p>#: data['id_imagen'] #</p>
+        </div>
+        <label class="km-label-above">
+
+            <span>Textarea field</span>
+
+            <textarea rows="7"></textarea>
+        </label>
+    </script>
+</div>

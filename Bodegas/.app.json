@@ -373,6 +373,51 @@
       "title": "Producto",
       "addToNavigation": true,
       "icon": "organize"
+    },
+    {
+      "type": "kendo-ui-mobile:view",
+      "name": "imagen",
+      "components": [
+        {
+          "type": "kendo-ui-mobile:editableList",
+          "listExtraFields": [],
+          "detailExtraFields": [],
+          "components": [
+            {
+              "type": "kendo-ui-mobile:editableListForm",
+              "components": [
+                {
+                  "type": "kendo-ui-mobile:editableListFormField",
+                  "name": "textAreaField",
+                  "dataBindingRelationChildren": "[]",
+                  "title": "Textarea field",
+                  "inputType": "textArea",
+                  "wideFieldTitlePosition": "top"
+                }
+              ],
+              "name": "editableListForm102",
+              "formType": "list"
+            }
+          ],
+          "name": "imagenModel",
+          "dataProvider": "bodegas",
+          "collection": "Imagen",
+          "headerField": "nombre",
+          "imageField": "imagen",
+          "subHeaderField": "id_imagen",
+          "isMapView": false,
+          "pullToRefresh": false,
+          "endlessScroll": false,
+          "deleteItemButton": false,
+          "detailHeaderFieldSource": "dataBound",
+          "detailHeaderField": "nombre",
+          "addItemForm": false,
+          "editItemForm": false
+        }
+      ],
+      "title": "Imagen",
+      "addToNavigation": true,
+      "icon": "organize"
     }
   ],
   "dataProviders": [
