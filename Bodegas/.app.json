@@ -418,6 +418,55 @@
       "title": "Imagen",
       "addToNavigation": true,
       "icon": "organize"
+    },
+    {
+      "type": "kendo-ui-mobile:view",
+      "name": "tienda",
+      "components": [
+        {
+          "type": "kendo-ui-mobile:editableList",
+          "listExtraFields": [],
+          "detailExtraFields": [],
+          "components": [
+            {
+              "type": "kendo-ui-mobile:editableListForm",
+              "components": [
+                {
+                  "type": "kendo-ui-mobile:editableListFormField",
+                  "name": "estado",
+                  "dataBindingRelationChildren": "[]",
+                  "title": "Estado",
+                  "inputType": "shortText",
+                  "dataBindingOptional": "estado"
+                }
+              ],
+              "name": "editableListForm103",
+              "formType": "list"
+            }
+          ],
+          "name": "tiendaModel",
+          "dataProvider": "bodegas",
+          "collection": "Tienda",
+          "headerField": "nombre",
+          "imageField": "imagen",
+          "subHeaderField": "costo_minimo",
+          "filterField": "afiliacion",
+          "isMapView": false,
+          "pullToRefresh": false,
+          "endlessScroll": false,
+          "deleteItemButton": false,
+          "detailHeaderFieldSource": "dataBound",
+          "detailHeaderField": "nombre",
+          "detailSubHeaderField": "estado",
+          "detailDescriptionField": "costo_minimo",
+          "detailImageField": "imagen",
+          "addItemForm": false,
+          "editItemForm": false
+        }
+      ],
+      "title": "Tiendas",
+      "addToNavigation": true,
+      "icon": "organize"
     }
   ],
   "dataProviders": [
