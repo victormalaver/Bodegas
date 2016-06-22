@@ -80,8 +80,8 @@ app.producto = kendo.observable({
                 for (var i = 0; i < data.length; i++) {
                     var dataItem = data[i];
 
-                    dataItem['nombreUrl'] =
-                        processImage(dataItem['nombre']);
+                    dataItem['caracteristicasUrl'] =
+                        processImage(dataItem['caracteristicas']);
 
                     flattenLocationProperties(dataItem);
                 }
@@ -97,6 +97,10 @@ app.producto = kendo.observable({
                     fields: {
                         'nombre': {
                             field: 'nombre',
+                            defaultValue: ''
+                        },
+                        'precio': {
+                            field: 'precio',
                             defaultValue: ''
                         },
                         'caracteristicas': {

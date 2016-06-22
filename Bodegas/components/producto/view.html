@@ -34,14 +34,14 @@
         <div class="image-with-text">
             # data = app.producto.productoModel.fixHierarchicalData(data); #
 
-            <img src="#: data['nombreUrl'] #">
+            <img src="#: data['caracteristicasUrl'] #">
             <h3>#: data['nombre'] #</h3>
-            <p>#: data['caracteristicas'] #</p>
+            <p>#: data['precio'] #</p>
         </div>
         <div class="editableListItem">
 
-            <div>Descripción:</div>
-            <div>#= data['descripcion'] #</div>
+            <div>Descuento</div>
+            <div>#= data['descuento'] #</div>
         </div>
     </script>
 </div>

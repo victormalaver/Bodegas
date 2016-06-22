@@ -339,11 +339,11 @@
               "components": [
                 {
                   "type": "kendo-ui-mobile:editableListFormField",
-                  "name": "descripcion",
+                  "name": "descuento",
                   "dataBindingRelationChildren": "[]",
-                  "title": "Descripción:",
+                  "title": "Descuento",
                   "inputType": "shortText",
-                  "dataBindingOptional": "descripcion"
+                  "dataBindingOptional": "descuento"
                 }
               ],
               "name": "editableListForm101",
@@ -354,8 +354,8 @@
           "dataProvider": "bodegas",
           "collection": "Producto",
           "headerField": "nombre",
-          "imageField": "nombre",
-          "subHeaderField": "caracteristicas",
+          "imageField": "caracteristicas",
+          "subHeaderField": "precio",
           "filterField": "nombre",
           "isMapView": false,
           "pullToRefresh": false,
@@ -388,11 +388,11 @@
               "components": [
                 {
                   "type": "kendo-ui-mobile:editableListFormField",
-                  "name": "textAreaField",
+                  "name": "producto",
                   "dataBindingRelationChildren": "[]",
-                  "title": "Textarea field",
-                  "inputType": "textArea",
-                  "wideFieldTitlePosition": "top"
+                  "title": "productoId",
+                  "inputType": "shortText",
+                  "dataBindingOptional": "id_producto"
                 }
               ],
               "name": "editableListForm102",
